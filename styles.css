@@ -1,0 +1,183 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10px;
+        font-family: 'Outfit';
+
+    }
+
+    :root {
+        --blue500: hsl(215, 51%, 70%);
+        --cyan400: hsl(178, 100%, 50%);
+        --cyan-active: hsl(178, 94%, 36%);
+        --blue950: hsl(217, 54%, 11%);
+        --blue900: hsl(216, 50%, 16%);
+        --blue800: hsl(215, 32%, 27%);
+    }
+
+    @font-face {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtq.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    .nft-preview-background-container {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--blue950);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nft-preview {
+        width: 35rem;
+        background-color: var(--blue900);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2.5rem;
+        box-sizing: border-box;
+        border-radius: 1.5rem;
+    }
+
+    .nft-preview__overlay {
+        width: 100%;
+        height: 30rem;
+        position: relative;
+    }
+
+    .nft-preview__overlay:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: var(--cyan400);
+        opacity: 0.5;
+        border-radius: 1rem;
+        position: absolute;
+    }
+
+    .nft-preview__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+
+    .nft-preview__heading-main {
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        cursor: pointer;
+        transition: color 200ms ease-in-out;
+    }
+
+    .nft-preview__heading-main:hover {
+        color: var(--cyan400);
+    }
+
+    .nft-preview__heading-main:active {
+        color: var(--cyan-active);
+    }
+
+    .nft-preview__link-main {
+        text-decoration: none;
+    }
+
+    .nft-preview__para-main {
+        font-size: 1.8rem;
+        margin-top: .5rem;
+        color: var(--blue500);
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .nft-preview__days-wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: .8rem;
+    }
+
+    .nft-preview__half {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nft-preview__half--clock {
+        justify-content: flex-end;
+    }
+
+    .nft-preview__amount-eth {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+        color: var(--cyan400);
+    }
+
+    .nft-preview__time-left {
+        font-size: 1.6rem;
+        color: var(--blue500);
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .nft-preview__divider {
+        width: 100%;
+        height: 1px;
+        background-color: var(--blue500);
+        margin-top: 2.4rem;
+        margin-bottom: 1.4rem;
+        opacity: 0.2;
+    }
+
+    .nft-preview__bio-wrap {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+
+    .nft-preview__avatar {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        border: solid #fff 1px;
+    }
+
+    .nft-preview__creator {
+        font-size: 1.6rem;
+        color: var(--blue500);
+        margin: 0;
+    }
+
+    .nft-preview__creator--name {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+    }
+
+    .nft-preview__creator--name:hover {
+        color: var(--cyan400);
+    }
+
+    .nft-preview__creator--name:active {
+        color: var(--cyan-active);
+    }
+
+
+    
+
