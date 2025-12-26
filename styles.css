@@ -54,6 +54,9 @@
         width: 100%;
         height: 30rem;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .nft-preview__overlay:before {
@@ -61,9 +64,25 @@
         width: 100%;
         height: 100%;
         background-color: none;
-        opacity: 0.5;
         border-radius: 1rem;
         position: absolute;
+        cursor: pointer;
+        transition: all 200ms linear;
+    }
+
+    .nft-preview__overlay:hover::before {
+        background-color: hsla(178, 100%, 50%, 0.5);
+    }
+
+    .nft-preview__overlay:hover .nft-preview__view-image {
+        opacity: 1;
+    }
+
+    .nft-preview__view-image {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        transition: all 200ms linear;
     }
 
     .nft-preview__image {
@@ -180,5 +199,6 @@
 
 
     
+
 
 
